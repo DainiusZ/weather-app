@@ -1,0 +1,20 @@
+:root {
+  --primary-color: 69, 123, 157;
+  --secondary-color: 168, 218, 220;
+  --contrast: 29, 54, 88;
+  --contrast-secondary: 230, 57, 70;
+  --background-color: 241, 250, 238;
+}
+
+#form input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: rgb(var(--secondary-color));
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 100px;
+  width: 20%;
+  transition: all 0.2s;
+  /* margin-right: -3.25rem; */
+}

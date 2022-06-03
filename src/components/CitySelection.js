@@ -1,4 +1,5 @@
 import React from "react";
+import "./CitySelection.css";
 
 function CitySelection({ setName }) {
   let input = "";
@@ -6,11 +7,15 @@ function CitySelection({ setName }) {
   function handleSubmit(e) {
     e.preventDefault();
     const form = document.querySelector("#form");
-    form.reset();
-    return setName(input);
+    if (form.checkValidity()) {
+      form.reset();
+      return setName(input);
+    }
   }
 
   function handleInput(e) {
+    console.log("input", e.target.value);
+
     return (input = e.target.value);
   }
   return (
@@ -22,6 +27,7 @@ function CitySelection({ setName }) {
           onChange={handleInput}
           type="text"
           placeholder="Enter city name"
+          required
         ></input>
         <input type="submit" onClick={handleSubmit} value={"Submit"} />
       </form>
