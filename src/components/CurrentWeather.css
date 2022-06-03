@@ -47,7 +47,6 @@
   margin-top: 10px;
   grid-row: 2 / span 1;
   grid-column: 2 / span 2;
-  /* justify-self: start; */
 }
 
 .rain {
@@ -92,14 +91,24 @@
   font-weight: 200;
   word-spacing: 5px;
 }
-@media only screen and (max-width: 500px) {
-  .header-date {
-    margin: 0 30px 0 25px;
+@media only screen and (max-width: 700px) {
+  .search-container {
+    justify-self: center;
   }
 }
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 600px) {
+  .search-container {
+    position: absolute;
+    top: 0px;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .temperature {
     display: block;
+    margin-top: -15px;
     grid-row: 1 / span 2;
     align-self: center;
   }
@@ -131,7 +140,6 @@
     font-size: 19px;
     font-weight: 200;
   }
-
   .header-date {
     margin: 0 10px 0 15px;
   }
