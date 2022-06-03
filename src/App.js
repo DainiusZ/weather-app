@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import WeatherCardList from "./components/WeatherCardList";
+import CurrentWeather from "./components/CurrentWeather";
 import getData from "./filterApiData";
 import "./App.css";
 import useFetch from "./useFetch";
@@ -24,7 +25,7 @@ function App() {
     <h1>Loading...</h1>
   ) : (
     <div className="App">
-      {console.log("Component got data", apiData)}
+      <CurrentWeather props={apiData} />
       <WeatherCardList props={apiData} />
     </div>
   );
