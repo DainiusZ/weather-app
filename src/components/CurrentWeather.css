@@ -41,24 +41,38 @@
 }
 
 .weather {
+  display: grid;
+  grid-template-columns: repeat(1fr, auto);
+  grid-template-rows: 1fr 1fr;
   margin-top: 10px;
   grid-row: 2 / span 1;
   grid-column: 2 / span 2;
+  /* justify-self: start; */
+}
+
+.rain {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  font-size: 25px;
+  font-weight: 500;
   align-self: start;
   justify-self: start;
 }
 
-.rain {
-  font-size: 25px;
-  font-weight: 500;
-}
-
 .wind {
-  padding-top: 10px;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  align-self: center;
+  justify-self: start;
   font-size: 19px;
   font-weight: 200;
 }
-
+.search-container {
+  width: 70%;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: end;
+}
 .header {
   display: flex;
   margin: 0 60px 0 0;

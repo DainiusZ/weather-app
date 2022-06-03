@@ -14,22 +14,25 @@ function CitySelection({ setName }) {
   }
 
   function handleInput(e) {
-    console.log("input", e.target.value);
-
     return (input = e.target.value);
   }
   return (
     <div>
       <form id="form">
         <input
-          id="city-name"
+          id="city-input"
           name="city"
           onChange={handleInput}
           type="text"
           placeholder="Enter city name"
           required
         ></input>
-        <input type="submit" onClick={handleSubmit} value={"Submit"} />
+        <input
+          className="button"
+          type="submit"
+          onClick={handleSubmit}
+          value={"Search"}
+        />
       </form>
     </div>
   );

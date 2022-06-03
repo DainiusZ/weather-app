@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import useFetch from "./useFetch";
 import WeatherCardList from "./components/WeatherCardList";
 import CurrentWeather from "./components/CurrentWeather";
-import CitySelection from "./components/CitySelection";
 import getData from "./filterApiData";
 import "./App.css";
 const apiKey = process.env.REACT_APP_API_KEY;
@@ -29,8 +28,7 @@ function App() {
     <h1>Loading...</h1>
   ) : (
     <div className="App">
-      <CitySelection setName={setCityName} />
-      <CurrentWeather props={apiData} />
+      <CurrentWeather props={apiData} setCity={setCityName} />
       <WeatherCardList props={apiData} />
     </div>
   );
