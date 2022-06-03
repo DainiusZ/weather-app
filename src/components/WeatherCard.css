@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+
+:root {
+  --primary-color: 69, 123, 157;
+  --secondary-color: 168, 218, 220;
+  --contrast: 29, 54, 88;
+  --contrast-secondary: 230, 57, 70;
+  --background-color: 241, 250, 238;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(var(--contrast));
+}
+.card {
+  margin: 20px;
+  padding: 20px;
+  background-image: linear-gradient(
+    150deg,
+    rgba(var(--secondary-color), 0.7) 50%,
+    80%,
+    rgba(var(--primary-color), 0.7)
+  );
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 1.5;
+  /* width: auto; */
+  border-radius: 10px;
+  /* background-color: var(--primary-color); */
+}
+
+.date {
+  font-weight: 400;
+}
+
+.weather-icon {
+  display: inline-block;
+  /* background-size: 50px 50px; */
+  height: 70px;
+  width: 70px;
+}
+
+.temp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-temp {
+  font-weight: 400;
+  padding-right: 10px;
+}
+.night-temp {
+  font-weight: 200;
+}
