@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import useFetch from "./useFetch";
 import WeatherCardList from "./components/WeatherCardList";
 import CurrentWeather from "./components/CurrentWeather";
 import getData from "./filterApiData";
 import "./App.css";
-import useFetch from "./useFetch";
 const apiKey = process.env.REACT_APP_API_KEY;
 
 function App() {

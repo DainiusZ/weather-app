@@ -17,8 +17,6 @@ function filterOutDayAndNigtTimes(time) {
 }
 
 function getData(apiData) {
-  console.log("getData called", apiData);
-
   if (!apiData) return;
   const weatherDataArray = [];
   let mergedDataObj = {};

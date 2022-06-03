@@ -2,19 +2,12 @@ import React from "react";
 import "./CurrentWeather.css";
 
 function CurrentWeather({ props }) {
-  console.log("CurrentWeather", props[0]);
-  // let newDataObj = {}
-  // let date, city, dayTemp, nightTemp, rain, rainIconUrl, wind;
-  // if (props) {
-  //   ({ date, city, dayTemp, nightTemp, rain, rainIconUrl, wind } = props[0]);
-  // }
   const { date, city, dayTemp, nightTemp, rain, rainIconUrl, wind } = props[0];
   const currentDate = new Date(date).toLocaleString("en-us", {
     weekday: "long",
     month: "short",
     day: "numeric",
   });
-  // console.log("props", date, city, dayTemp, nightTemp, rain, rainIconUrl, wind);
 
   return (
     <div className="container">

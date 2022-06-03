@@ -2,7 +2,7 @@ import React from "react";
 import "./WeatherCard.css";
 
 function WeatherCard({ apiObject }) {
-  const { date, dayTemp, nightTemp, rain, rainIconUrl, wind } = apiObject;
+  const { date, dayTemp, nightTemp, rainIconUrl, wind } = apiObject;
   const weekDayShortString = new Date(date).toLocaleString("en-us", {
     weekday: "short",
   });

@@ -12,18 +12,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  /* gap: 1px; */
-  /* justify-items: end; */
   background-color: rgb(var(--background-color));
-  min-height: 95vh;
+  min-height: 85vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-img {
-  display: inline-block;
-  /* height: 60px;
-  width: 60px; */
-}
+
 .temperature {
   display: flex;
   align-items: center;
@@ -51,6 +45,7 @@ img {
   grid-row: 2 / span 1;
   grid-column: 2 / span 2;
   align-self: start;
+  justify-self: start;
 }
 
 .rain {
